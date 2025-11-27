@@ -1,0 +1,33 @@
+{
+  "metadata": {"title": "Limit Intuition", "fps": 30, "duration": 10, "style": "lecture"},
+  "scene_sequence": [
+    {
+      "id": "title",
+      "type": "frame",
+      "start": 0.0,
+      "end": 2.5,
+      "actors": [
+        {"kind": "text", "id": "t1", "text": "Limit Intuition", "font_size": 56}
+      ]
+    },
+    {
+      "id": "def",
+      "type": "frame",
+      "start": 2.5,
+      "end": 5.5,
+      "actors": [
+        {"kind": "text", "id": "t2", "text": "Definition of a limit.", "font_size": 36}
+      ]
+    },
+    {
+      "id": "example",
+      "type": "frame",
+      "start": 5.5,
+      "end": 9.5,
+      "actors": [
+        {"kind": "math", "id": "m1", "latex": "f'(x)=\\lim_{h\\to 0}\\frac{f(x+h)-f(x)}{h}", "font_size": 36}
+      ]
+    }
+  ],
+  "assets": []
+}
