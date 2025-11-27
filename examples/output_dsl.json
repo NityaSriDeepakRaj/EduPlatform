@@ -1,0 +1,117 @@
+{
+  "metadata": {
+    "title": "Limit Intuition",
+    "fps": 30,
+    "duration": 7.0,
+    "style": "lecture"
+  },
+  "scene_sequence": [
+    {
+      "id": "title",
+      "type": "frame",
+      "start": 0.0,
+      "end": 2.5,
+      "camera": {
+        "type": "static",
+        "zoom": 1.0
+      },
+      "background": {
+        "color": "#FFFFFF"
+      },
+      "actors": [
+        {
+          "kind": "text",
+          "id": "title_text",
+          "text": "Limit Intuition",
+          "pos": [
+            0,
+            1.5
+          ],
+          "font_size": 56,
+          "animate": {
+            "in": "fade_in",
+            "duration": 0.6
+          }
+        }
+      ]
+    },
+    {
+      "id": "scene_0",
+      "type": "frame",
+      "start": 2.5,
+      "end": 4.0,
+      "camera": {
+        "type": "static"
+      },
+      "actors": [
+        {
+          "kind": "text",
+          "id": "actor_0",
+          "text": "Definition of a limit.",
+          "pos": [
+            0,
+            1.0
+          ],
+          "font_size": 36,
+          "animate": {
+            "in": "write",
+            "duration": 0.75
+          }
+        }
+      ]
+    },
+    {
+      "id": "scene_1",
+      "type": "frame",
+      "start": 4.0,
+      "end": 5.5,
+      "camera": {
+        "type": "static"
+      },
+      "actors": [
+        {
+          "kind": "math",
+          "id": "actor_1",
+          "text": "Example: f(x)=x^2",
+          "pos": [
+            0,
+            1.0
+          ],
+          "font_size": 36,
+          "animate": {
+            "in": "write",
+            "duration": 0.75
+          },
+          "latex": "Example: f(x)=x^2"
+        }
+      ]
+    },
+    {
+      "id": "scene_2",
+      "type": "frame",
+      "start": 5.5,
+      "end": 7.0,
+      "camera": {
+        "type": "static"
+      },
+      "actors": [
+        {
+          "kind": "math",
+          "id": "actor_2",
+          "text": "Note: as h -> 0, (f(x+h)-f(x))/h -> f'(x)",
+          "pos": [
+            0,
+            1.0
+          ],
+          "font_size": 36,
+          "animate": {
+            "in": "write",
+            "duration": 0.75
+          },
+          "latex": "Note: as h -> 0, (f(x+h)-f(x))/h -> f'(x)"
+        }
+      ]
+    }
+  ],
+  "assets": []
+}

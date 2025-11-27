@@ -1,0 +1,67 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Scene DSL",
+  "type": "object",
+  "required": ["metadata", "scene_sequence", "assets"],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "required": ["title", "fps", "duration"],
+      "properties": {
+        "title": {"type": "string"},
+        "fps": {"type": "number"},
+        "duration": {"type": "number"},
+        "style": {"type": "string"}
+      }
+    },
+    "scene_sequence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "type", "start", "end", "actors"],
+        "properties": {
+          "id": {"type": "string"},
+          "type": {"type": "string", "enum": ["frame","animation"]},
+          "start": {"type": "number"},
+          "end": {"type": "number"},
+          "camera": {"type": "object"},
+          "background": {"type": "object"},
+          "actors": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["kind","id"],
+              "properties": {
+                "kind": {"type": "string", "enum": ["text","math","image","plot","narration"]},
+                "id": {"type": "string"},
+                "text": {"type": "string"},
+                "latex": {"type": "string"},
+                "pos": {
+                  "type": "array",
+                  "items": {"type": "number"},
+                  "minItems": 2,
+                  "maxItems": 3
+                },
+                "font_size": {"type": "number"},
+                "animate": {"type": "object"}
+              }
+            }
+          },
+          "notes": {"type": "string"}
+        }
+      }
+    },
+    "assets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id","type"],
+        "properties": {
+          "id": {"type": "string"},
+          "type": {"type": "string"},
+          "path": {"type": "string"}
+        }
+      }
+    }
+  }
+}
