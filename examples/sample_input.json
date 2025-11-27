@@ -1,0 +1,10 @@
+{
+  "title": "Limit Intuition",
+  "intent": "explain_concept",
+  "steps": [
+    {"text": "Definition of a limit."},
+    {"text": "Example: f(x)=x^2"},
+    {"text": "Note: as h -> 0, (f(x+h)-f(x))/h -> f'(x)"}
+  ],
+  "style": "lecture"
+}
